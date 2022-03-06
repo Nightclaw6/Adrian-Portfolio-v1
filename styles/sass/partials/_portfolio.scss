@@ -1,0 +1,41 @@
+#portfolio {
+  background-image: url(../../../assets/portfolio/bg.jpg);
+  margin-bottom: 50px;
+}
+.port_title h3 {
+  text-align: center;
+}
+.projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.project_item {
+  display: flex;
+  flex-direction: column;
+}
+.project_item img {
+  width: 23rem;
+  height: 20rem;
+  border: 5px solid white;
+  background-size: cover;
+  margin: 5px;
+}
+
+.project_item button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: inline-block;
+}
+.buttons {
+  display: inline-block;
+  text-align: center;
+}
+.project_item button:hover {
+  background-color: $primary;
+  color: black;
+}

@@ -1,0 +1,113 @@
+/*------------------------------------------------------------------*/
+/*	23) Section Contact
+/*------------------------------------------------------------------*/
+#contact {
+  background-color: #141414;
+  padding: 140px 0;
+}
+#contact .barna__title {
+  margin-bottom: 50px;
+}
+/*------------------------------------------------------------------*/
+/*	24) Contact (element)
+/*------------------------------------------------------------------*/
+.barna__contact {
+  width: 100%;
+  padding: 20px 50px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.barna__contact .item.nobg {
+  background-color: transparent;
+  border-radius: 0;
+}
+.barna__contact .item {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: #141414;
+  border-radius: 25px;
+}
+.barna__contact input,
+.barna__contact textarea {
+  background-color: transparent;
+  position: relative;
+  z-index: 3;
+}
+.barna__contact .placeholder {
+  position: absolute;
+  padding: 0 20px;
+  display: block;
+  font-size: 14px;
+  line-height: 38px;
+  left: 0;
+  top: 6px;
+  white-space: nowrap;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.barna__contact .active .placeholder {
+  left: 100%;
+  transform: translateX(-100%);
+  background-color: #000;
+  margin-left: -6px;
+}
+.barna__contact .info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.barna__contact .info > * {
+  padding: 10px 20px;
+  background-color: #141414;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  display: none;
+  color: $primary;
+}
+.barna__contact .in {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-left: -30px;
+}
+.barna__contact .left {
+  width: 50%;
+  padding-left: 30px;
+}
+.barna__contact .right {
+  width: 50%;
+  padding-left: 30px;
+}
+#send_message {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #141414;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #a1a1a1;
+  outline: none;
+  border: 2px solid transparent;
+}
+#send_message:focus {
+  border-color: $primary;
+}

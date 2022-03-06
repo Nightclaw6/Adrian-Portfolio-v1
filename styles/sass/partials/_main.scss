@@ -1,0 +1,106 @@
+.main .hero {
+  width: 100%;
+  float: left;
+  position: relative;
+  clear: both;
+  margin-top: 10%;
+}
+.heroImg {
+  position: relative;
+  width: 100%;
+}
+.txtContainer {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+// Typewriter Effect
+:root {
+  --typewriterSpeed: 4s;
+  --typewriterCharacters: 26;
+}
+
+h1 {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  font-family: $headingFont, monospace;
+  position: relative;
+  width: max-content;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1::before {
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.subtitle {
+  color: $primary;
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: black;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+// End of Typewriter Effect
+
+// About Section
+.rightContainer h3 {
+  text-align: center;
+}
+.skillIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 5% 20%;
+}
+.icons {
+  margin: 20px;
+}
+.skillIcons img {
+  width: 6rem;
+}
+
+#github {
+  background-color: grey;
+}

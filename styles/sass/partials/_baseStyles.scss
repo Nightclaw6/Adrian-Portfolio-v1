@@ -1,0 +1,74 @@
+$headingFont: "Nunito Sans", sans-serif;
+$bodyFont: "Mulish", Arial, Helvetica, sans-serif;
+$primary: #dd1c63;
+
+html {
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: $bodyFont;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #a1a1a1;
+  background-color: #000;
+}
+.wrapper {
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  float: left;
+  clear: both;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper .main {
+  width: 100%;
+  float: left;
+  clear: both;
+}
+.svg {
+  fill: currentcolor;
+  width: 20px;
+  height: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 600;
+  font-family: $headingFont;
+  color: #e4e4e4;
+}
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: #e4e4e4;
+}
+h1 > a:hover,
+h2 > a:hover,
+h3 > a:hover,
+h4 > a:hover,
+h5 > a:hover,
+h6 > a:hover {
+  color: $primary;
+}
+input {
+  font-family: "Jost";
+}
+p {
+  letter-spacing: 0;
+}
+a:focus {
+  outline: none;
+}
