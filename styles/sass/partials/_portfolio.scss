@@ -4,6 +4,9 @@
 }
 .port_title h3 {
   text-align: center;
+  font-family: $headingFont;
+  font-size: 3rem;
+  text-decoration: 4px solid underline $primary;
 }
 .projects {
   width: 100%;
@@ -35,7 +38,26 @@
   display: inline-block;
   text-align: center;
 }
+.project_item button:hover,
 .project_item button:hover {
   background-color: $primary;
   color: black;
+  transition: background-color 1.2s ease-out;
+}
+
+form p {
+  position: relative;
+}
+
+form .placeholder {
+  position: absolute;
+  padding: 0 20px;
+  display: block;
+  font-size: 14px;
+  line-height: 38px;
+  left: 0;
+  top: 6px;
+  white-space: nowrap;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }

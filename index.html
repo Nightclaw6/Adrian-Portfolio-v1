@@ -20,7 +20,7 @@
         <span>loading...</span>
     </div>
     
-    <div class="wrapper">
+    <div class="wrapper" id="home">
         <!-- loader -->
         <!-- Header -->
         <header class="header" id="header">
@@ -28,7 +28,6 @@
                 <ul>
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -37,12 +36,12 @@
             <div class="social">
                 <ul>
                     <li>
-                        <a href="#" target="_blank">
-                            <i class="fab fa-github 2x"></i></i>
+                        <a href="https://github.com/Nightclaw6" target="_blank">
+                            <i class="fab fa-github"></i></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank">
+                        <a href="https://www.linkedin.com/in/adrian-stoian/" target="_blank">
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </li>
@@ -170,136 +169,58 @@
         <!-- /Section Portfolio -->
         
         <!-- Section Contact -->
-        <section id="contact">
-            <div class="barna__section_title">
-                <div class="title">
-                    <h3>Contact Me</h3>
-                    <img src="svg/shape.svg" alt="" class="svg" />
-                </div>
+        <section class="contact" id="contact">
+            <div class="personal_info">
+                <h3>Adrian Stoian</h3>
+                <ul>
+                    <li><span>Address :</span> 411 Duplex Avenue,Toronto</li>
+                    <li><span>Phone Nr. :</span> 444-555-7777</li>
+                    <li><span>Email Address :</span> sclaudiu82@yahoo.com</li>
+                </ul>
             </div>
-        
-            <div class="container">
-                <!-- Main Title -->
-                <div class="barna__title center">
-                    <p><span>Message</span></p>
-                    <h3>Contact</h3>
-                </div>
-                <!-- /Main Title -->
-        
-                <!-- Contact -->
-                <div class="barna__contact" data-bg-img="img/contact/bg.jpg" data-email="yourmail@gmail.com">
-                    <div class="info">
-                        <div class="success" data-success="Your message has been received, we will contact you soon."></div>
-                        <div class="empty_notice">
-                            <span>Please Fill Required Fields</span>
-                        </div>
-                    </div>
-        
-                    <div class="in">
-                        <div class="left">
-                            <div class="left_in">
-                                <div class="item">
-                                    <span class="placeholder">Name *</span>
-                                    <input class="name" type="text" />
-                                </div>
-                                <div class="item">
-                                    <span class="placeholder">Email *</span>
-                                    <input class="email" type="email" />
-                                </div>
-                                <div class="item">
-                                    <span class="placeholder">Subject</span>
-                                    <input class="subject" type="text" />
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="right">
-                            <div class="right_in">
-                                <div class="item">
-                                    <span class="placeholder">Message</span>
-                                    <textarea class="message"></textarea>
-                                </div>
-                                <div class="item nobg">
-                                    <a id="send_message" href="#">Submit request</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Contact -->
+            <div class="contact_info">
+                <form action="#">
+                    <p class="item">
+                        
+                        <label for="">Name</label>
+                        <input type="text" name="name">
+                    </p>
+                    <p class="item">
+                    
+                        <label for="">Company</label>
+                        <input type="text" name="email">
+                    </p>
+                    <p class="item">
+                        
+                        <label for="">Email Address</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p class="item">
+                        
+                        <label for="">Subject</label>
+                        <input type="text" name="subject">
+                    </p>
+                    <p class="full">
+                        
+                        <label>Message</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </p>
+                    <p class="full">
+                        <button>Submit</button>
+                    </p>
+                </form>
             </div>
         </section>
-        <!-- /Section Contact -->
-        <footer id="footer">
-            <div class="widgets">
-                <div class="container">
-                    <ul class="list">
-                        <li class="list_item">
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="svg/widget-1.svg" alt="" class="svg" />
-                                </div>
-                                <h3>Address:</h3>
-                                <p>156 KG Road, NewYork</p>
-                            </div>
-                        </li>
-                        <li class="list_item">
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="svg/widget-2.svg" alt="" class="svg" />
-                                </div>
-                                <h3>Email:</h3>
-                                <p>Mompanyiou@gmail.com</p>
-                            </div>
-                        </li>
-                        <li class="list_item">
-                            <div class="item">
-                                <div class="icon">
-                                    <img src="svg/widget-3.svg" alt="" class="svg" />
-                                </div>
-                                <h3>Social:</h3>
-                                <div class="social">
-                                    <ul>
-                                        <li>
-                                            <a href="#" target="_blank"><img src="svg/social/stackoverflow.svg" alt=""
-                                                    class="svg" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank"><img src="svg/social/github.svg" alt=""
-                                                    class="svg" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank"><img src="svg/social/facebook.svg" alt=""
-                                                    class="svg" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank"><img src="svg/social/twitter.svg" alt=""
-                                                    class="svg" /></a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank"><img src="svg/social/linkedin.svg" alt=""
-                                                    class="svg" /></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        
-            <div class="copyright">
-                <div class="container">
-                    <p>
-                        @2021 by
-                        <a href="https://themeforest.net/user/ib-themes/portfolio" target="_blank">ib-themes</a>
-                        All right reserved
-                    </p>
-                </div>
-            </div>
-        </footer>
     </div>
     <!-- / Wrapper -->
+    <!-- Footer -->
+    <footer>
+        <div class="wrapper">
+            <p>&copy; Adrian Stoian 2022<br>
+            </p>
+        </div>
+    </footer>
+    <!-- /Footer -->
     <script src="loader.js"></script>
 </body>
 </html>

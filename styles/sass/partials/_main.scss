@@ -5,6 +5,10 @@
   clear: both;
   margin-top: 10%;
 }
+.main .subtitle {
+  font-family: $headingFont;
+  font-size: 3rem;
+}
 .heroImg {
   position: relative;
   width: 100%;
@@ -83,9 +87,21 @@ h1::after {
 // End of Typewriter Effect
 
 // About Section
+.rightContainer {
+  background-image: url(../../../assets/contact/bg.jpg);
+}
 .rightContainer h3 {
   text-align: center;
+  font-family: $headingFont;
+  font-size: 3rem;
+  text-decoration: underline 4px $primary;
 }
+.rightContainer p {
+  padding: 20px;
+  font-family: $headingFont;
+  font-size: 1.8rem;
+}
+
 .skillIcons {
   display: flex;
   flex-wrap: wrap;
@@ -103,4 +119,10 @@ h1::after {
 
 #github {
   background-color: grey;
+}
+
+// Footer Section
+
+footer p {
+  text-align: center;
 }

@@ -19,7 +19,11 @@ header {
   padding: 20px 40px;
 }
 
+.nav {
+  width: 90%;
+}
 .social {
+  width: 10%;
   margin-left: 40px;
 }
 .nav ul {
@@ -38,7 +42,7 @@ header {
 .nav a {
   font-family: $headingFont;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.7rem;
   line-height: 30px;
   text-transform: uppercase;
   color: #e4e4e4;
