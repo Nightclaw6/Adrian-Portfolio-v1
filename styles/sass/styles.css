@@ -626,6 +626,7 @@ footer p {
 }
 
 .project_item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }

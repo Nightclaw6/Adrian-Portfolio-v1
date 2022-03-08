@@ -16,9 +16,11 @@
   align-items: center;
 }
 .project_item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
+
 .project_item img {
   width: 23rem;
   height: 20rem;
