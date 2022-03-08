@@ -1,21 +1,22 @@
-.main .hero {
+main {
   width: 100%;
   float: left;
   position: relative;
   clear: both;
-  margin-top: 10%;
+  margin-top: 8vh;
 }
-.main .subtitle {
+main .subtitle {
   font-family: $headingFont;
-  font-size: 3rem;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
 }
 .heroImg {
   position: relative;
   width: 100%;
+  background-size: cover;
 }
 .txtContainer {
   position: absolute;
-  top: 5%;
+  top: 10%;
   left: 5%;
 }
 
@@ -89,6 +90,7 @@ h1::after {
 // About Section
 .rightContainer {
   background-image: url(../../../assets/contact/bg.jpg);
+  width: 100%;
 }
 .rightContainer h3 {
   text-align: center;
@@ -112,6 +114,10 @@ h1::after {
 }
 .icons {
   margin: 20px;
+}
+.icons:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease-out;
 }
 .skillIcons img {
   width: 6rem;

@@ -24,14 +24,42 @@
         <!-- loader -->
         <!-- Header -->
         <header class="header" id="header">
-            <nav class="nav">
+            <!-- <nav class="nav">
                 <ul>
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+            </nav> -->
+            
+            <!-- Mobile Menu    -->
+            
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <nav class="menu">
+                <div class="menu-branding">
+                    <h2>Adrian Stoian</h2>
+                </div>
+                <ul class="menu-nav">
+                    <li class="nav-item current">
+                        <a href="#home" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
             </nav>
+
     
             <div class="social">
                 <ul>
@@ -51,26 +79,24 @@
         <!-- /Header -->
         
         <!-- Hero Section -->
-        <div class="main">
+        <main>
             <img class="heroImg" src="./assets/bg.jpg" alt="">
             <div class="txtContainer">
                 <h1>Hello, my name is Adrian.</h1>
                 <p class="subtitle">Welcome to my website!</p>
             </div>
-            <!-- right image portrait -->
-            <img src="" alt="">
-        </div>
+        </main>
         <!-- /Hero Section -->
         
         <!-- About -->
         <section id="about">    
             <div class="aboutContainer">
-                <div class="leftContainer">
+                <!-- <div class="leftContainer">
                     <img src="" alt="">
-                </div>
+                </div> -->
                 <div class="rightContainer">
                     <h3>Who am I</h3>  
-                    <p>Professional and dedicated Front End Developer based in Toronto,
+                    <p>Hi! My name is Adrian and I am a professional and dedicated Front End Developer based in Toronto,
                     passionate about learning new technologies, bringing new ideas to
                     life and working with dedicated teams to build efficient and robust
                     applications.
@@ -137,21 +163,13 @@
                                 <button>Git Hub</button>
                             </a>
                         </div>
-                        <div class="details">
-                            <h2>Harper's Blog</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consectetur.</p>
-                            <p>HTML / CSS</p>
-                        </div>
+                        
                     </div>
                     <div class="project_item">
                         <a href="">
                             <img src="./assets/project_img/project2.png" alt="">
                         </a>
-                        <div class="details">
-                            <h2>Compound Interest Calculator</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consectetur.</p>
-                            <p>HTML / CSS</p>
-                        </div>
+                        
                         <div class="buttons">
                             <a href="https://condescending-curran-043a74.netlify.app">
                                 
@@ -166,11 +184,7 @@
                         <a href="">
                             <img src="./assets/project_img/project3.png" alt="">
                         </a>
-                        <div class="details">
-                            <h2>Movie Info Booth</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, consectetur.</p>
-                            <p>HTML / CSS / JS</p>
-                        </div>
+                        
                         <div class="buttons">
                             <a href="https://boring-roentgen-a41a83.netlify.app/#">
                                 
@@ -242,5 +256,6 @@
     </footer>
     <!-- /Footer -->
     <script src="loader.js"></script>
+    <script src="hamburger.js"></script>
 </body>
 </html>
