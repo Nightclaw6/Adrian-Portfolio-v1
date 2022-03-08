@@ -896,6 +896,11 @@ form .active .placeholder {
   margin-left: -6px;
 }
 
+@media screen and (max-width: 400px) {
+  .contact.info form .full {
+    width: 85%;
+  }
+}
 @media screen and (max-width: 500px) {
   .social ul {
     display: flex;
