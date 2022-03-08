@@ -17,10 +17,16 @@
   .contact {
     width: 90%;
   }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 90%;
+  .contact_info form {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .contact_info .inputs {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
   }
 }
 
