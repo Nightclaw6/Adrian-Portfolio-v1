@@ -5,10 +5,9 @@ main {
   clear: both;
   margin-top: 8vh;
 }
-main .subtitle {
-  font-family: $headingFont;
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-}
+// main .subtitle {
+  
+// }
 .heroImg {
   position: relative;
   width: 100%;
@@ -17,7 +16,7 @@ main .subtitle {
 .txtContainer {
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 24%;
 }
 
 // Typewriter Effect
@@ -60,11 +59,13 @@ h1::after {
 
 .subtitle {
   color: $primary;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 400;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  font-family: $headingFont;
+  font-size: clamp(1rem, 3vw + 1rem, 6rem);
 }
 
 @keyframes typewriter {

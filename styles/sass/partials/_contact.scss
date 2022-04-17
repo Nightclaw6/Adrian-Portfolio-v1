@@ -2,20 +2,34 @@
 /*	23) Section Contact
 /*------------------------------------------------------------------*/
 .contact {
+  width: 100%;
   padding: 1rem;
   box-shadow: 0 0 20px 0 rgba($color: $primary, $alpha: 0.7);
   margin: 10px;
   background-image: url(../../../assets/contact/bg.jpg);
+}
+.social {
+  width: 100%;
+}
+.personal_info .social ul {
+  width: 100%;
+  justify-content: center;
 }
 .personal_info {
   background: #141414;
   margin: 10px;
   padding: 10px;
 }
+
 .personal_info h3,
 .personal_info ul {
+  list-style: none;  
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.personal_info h3 {
+  font-size: 2rem;
 }
 .personal_info span {
   color: $primary;
@@ -30,15 +44,14 @@
 }
 
 input[type="text"],
-input[type="email"],
-textarea {
+input[type="email"], .full textarea {
   background-color: #141414;
   color: white;
   font-family: $headingFont;
   border-radius: 20px;
   outline: none;
   line-height: 1.5;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
 }
 
@@ -48,8 +61,7 @@ textarea:hover {
   border: 2px solid $primary;
 }
 
-.contact_info form button,
-.contact_info form textarea {
+.contact_info form button {
   width: 100%;
   padding: 0.5rem;
 }
@@ -84,6 +96,8 @@ textarea:hover {
 form p {
   position: relative;
 }
+
+
 
 form .placeholder {
   position: absolute;

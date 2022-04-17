@@ -10,9 +10,10 @@
 }
 .projects {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 .project_item {
@@ -46,6 +47,176 @@
 }
 .project_item button:hover,
 .project_item button:focus {
+  background-color: $primary;
+  color: black;
+  transition: background-color 1.2s ease-out;
+}
+
+// Flip cards
+
+// :root {
+//   --level-one: translateZ(3rem);
+//   --level-two: translateZ(6rem);
+//   --level-three: translateZ(9rem);
+
+//   --fw-normal: 400;
+//   --fw-bold: 700;
+
+//   --clr: #b7c9e5;
+// }
+
+// .card {
+//   width: 400px;
+// }
+
+// .card__content {
+//   text-align: center;
+//   position: relative;
+//   padding: 9em 5em;
+//   transition: transform 3s;
+//   // background: pink;
+//   transform-style: preserve-3d;
+// }
+
+// .card:hover .card__content {
+//   transform: rotateY(.5turn);
+// }
+
+// .card__front,
+// .card__back {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   padding: 0 30px;
+//   backface-visibility: hidden;
+//   transform-style: preserve-3d;
+//   display: grid;
+//   align-content: center;
+// }
+
+// .card__front img {
+//   // background-color: var(--clr);
+//   // background-image: url(../../../assets/project_img/project3.png);
+//   // background-size:auto ;
+//   // background-blend-mode: overlay;
+//   // color: #333;
+//   width: 100%;
+//   object-fit: cover;
+// }
+
+// .card__front::before {
+//   content: '';
+//   position: absolute;
+//   --spacer: 1em;
+//   top: var(--spacer);
+//   bottom: var(--spacer);
+//   left: var(--spacer);
+//   right: var(--spacer);
+//   border: 3px solid currentColor;
+//   transform: var(--level-one);
+// }
+
+// .card__title {
+//   font-size: 3.5rem;
+//   transform: var(--level-three);
+//   order: 2;
+//   text-transform: uppercase;
+// }
+
+// .card__subtitle {
+//   transform: var(--level-two);
+//   text-transform: uppercase;
+//   letter-spacing: 4px;
+//   font-size: .75rem;
+//   font-weight: var(--fw-bold);
+//   opacity: .7;
+// }
+
+// .card__body {
+//   transform: var(--level-two);
+//   font-weight: var(fw-normal);
+//   font-size: 1.5rem;
+//   line-height: 1.6;
+// }
+
+
+
+// .card__back {
+//   transform: rotateY(.5turn);
+//   color: var(--clr);
+//   background: #333;
+// }
+
+// Slide cards
+
+.card {
+  position: relative;
+  max-width: 30rem;
+  height: 13rem;
+  background: #242424;
+  margin: 85px 10px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 26rem;
+}
+
+.card .imgBx {
+  position: relative;
+  width: 24rem;
+
+  top: -5rem;
+  left: 3rem;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fbf8f8;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -6.5rem;
+  transition-delay: 0.3s;
+}
+
+.card button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.buttons {
+  display: inline-block;
+  text-align: center;
+}
+
+.card button:hover,
+.card button:focus {
   background-color: $primary;
   color: black;
   transition: background-color 1.2s ease-out;

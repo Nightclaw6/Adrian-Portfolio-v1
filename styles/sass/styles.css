@@ -273,7 +273,7 @@ input::-moz-focus-inner {
 html {
   overflow-x: hidden;
   padding: 0px;
-  margin: 0px;
+  margin: 0 auto;
 }
 
 body {
@@ -290,11 +290,11 @@ body {
   box-sizing: border-box;
   max-width: 1500px;
   width: 100%;
-  float: left;
   clear: both;
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .wrapper .main {
@@ -353,8 +353,9 @@ a:focus {
 
 header {
   width: 100%;
-  margin-bottom: 50px;
-  padding: 50px 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 50px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -375,11 +376,6 @@ header {
 
 .nav {
   width: 90%;
-}
-
-.social {
-  width: 10%;
-  margin-left: 40px;
 }
 
 .nav ul {
@@ -490,7 +486,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.8;
+  max-width: 1500px;
+  opacity: 1;
   visibility: hidden;
 }
 .menu.show {
@@ -510,7 +507,7 @@ header {
 .menu .menu-nav {
   margin: 0;
   padding: 0;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.9);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -519,17 +516,17 @@ header {
   transform: translate3d(0, 0, 0);
 }
 .menu .menu-branding {
-  background: rgba(0, 0, 0, 0.95);
+  background: rgb(0, 0, 0);
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
 .menu .menu-branding.show {
   transform: translate3d(0, 0, 0);
 }
-.menu .menu-branding h2 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 5rem;
-  color: white;
+.menu .menu-branding img {
+  border-radius: 50%;
+  width: 25rem;
+  height: 21.55rem;
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -545,8 +542,8 @@ header {
   display: inline-block;
   position: relative;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2.5rem;
-  padding: 1rem 0;
+  font-size: 3.5rem;
+  padding: 2rem 0;
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
@@ -577,11 +574,6 @@ main {
   margin-top: 8vh;
 }
 
-main .subtitle {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
-}
-
 .heroImg {
   position: relative;
   width: 100%;
@@ -591,7 +583,7 @@ main .subtitle {
 .txtContainer {
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 24%;
 }
 
 :root {
@@ -634,12 +626,14 @@ h1::after {
 
 .subtitle {
   color: #dd1c63;
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 400;
   opacity: 0;
   transform: translateY(3rem);
   -webkit-animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
           animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: clamp(1rem, 3vw + 1rem, 6rem);
 }
 
 @-webkit-keyframes typewriter {
@@ -739,9 +733,10 @@ footer p {
 
 .projects {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -785,14 +780,93 @@ footer p {
   transition: background-color 1.2s ease-out;
 }
 
+.card {
+  position: relative;
+  max-width: 30rem;
+  height: 13rem;
+  background: #242424;
+  margin: 85px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  height: 26rem;
+}
+
+.card .imgBx {
+  position: relative;
+  width: 24rem;
+  top: -5rem;
+  left: 3rem;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #fbf8f8;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -6.5rem;
+  transition-delay: 0.3s;
+}
+
+.card button {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.buttons {
+  display: inline-block;
+  text-align: center;
+}
+
+.card button:hover,
+.card button:focus {
+  background-color: #dd1c63;
+  color: black;
+  transition: background-color 1.2s ease-out;
+}
+
 /*------------------------------------------------------------------*/
 /*	23) Section Contact
 /*------------------------------------------------------------------*/
 .contact {
+  width: 100%;
   padding: 1rem;
   box-shadow: 0 0 20px 0 rgba(221, 28, 99, 0.7);
   margin: 10px;
   background-image: url(../../../assets/contact/bg.jpg);
+}
+
+.social {
+  width: 100%;
+}
+
+.personal_info .social ul {
+  width: 100%;
+  justify-content: center;
 }
 
 .personal_info {
@@ -803,8 +877,13 @@ footer p {
 
 .personal_info h3,
 .personal_info ul {
+  list-style: none;
   text-align: center;
   margin: 0 0 1rem 0;
+}
+
+.personal_info h3 {
+  font-size: 2rem;
 }
 
 .personal_info span {
@@ -820,15 +899,14 @@ footer p {
 }
 
 input[type=text],
-input[type=email],
-textarea {
+input[type=email], .full textarea {
   background-color: #141414;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   border-radius: 20px;
   outline: none;
   line-height: 1.5;
-  padding: 5px;
+  padding: 5px 10px;
   width: 100%;
 }
 
@@ -838,8 +916,7 @@ textarea:hover {
   border: 2px solid #dd1c63;
 }
 
-.contact_info form button,
-.contact_info form textarea {
+.contact_info form button {
   width: 100%;
   padding: 0.5rem;
 }
@@ -900,11 +977,44 @@ form .active .placeholder {
   .contact.info form .full {
     width: 85%;
   }
+
+  .full textarea {
+    width: 95%;
+  }
+
+  input[type=text], input[type=email] {
+    width: 95%;
+  }
+
+  main .txtContainer {
+    top: 18%;
+    left: 12%;
+  }
+
+  .txtContainer h1 {
+    font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  }
+
+  .card .imgBx {
+    width: 19rem;
+    top: -4rem;
+    left: 0rem;
+  }
+
+  .card {
+    max-width: 24rem;
+    margin: 85px 42px;
+  }
 }
 @media screen and (max-width: 500px) {
   .social ul {
     display: flex;
     flex-direction: initial;
+  }
+
+  .txtContainer {
+    top: 20%;
+    left: 15%;
   }
 
   .menu .menu-branding h2 {
@@ -925,6 +1035,10 @@ form .active .placeholder {
     width: 90%;
   }
 
+  form .inputs p {
+    width: 24rem;
+  }
+
   .contact_info form {
     width: 100%;
     padding: 0.5rem;
@@ -936,6 +1050,10 @@ form .active .placeholder {
     justify-content: center;
     align-items: center;
     grid-column: 1/3;
+  }
+
+  .contact_info form .inputs p {
+    width: 18rem;
   }
 }
 @media screen and (max-width: 550px) {
@@ -954,6 +1072,13 @@ form .active .placeholder {
     display: none;
   }
 }
+@media screen and (max-width: 665px) {
+  header .menu .menu-branding img {
+    margin: 5px;
+    width: 17rem;
+    height: 14.65rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .projects {
     display: flex;
@@ -966,17 +1091,35 @@ form .active .placeholder {
     flex-direction: initial;
   }
 
-  .menu .menu-branding h2 {
+  .menu .menu-branding img {
     margin: 5px;
-    font-size: 2.5rem;
+    width: 20rem;
+    height: 17.25rem;
   }
 
   .menu .nav-item a {
     font-size: 2rem;
   }
+
+  .txtContainer {
+    top: 18%;
+    left: 17%;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu .menu-branding h2 {
     font-size: 3rem;
+  }
+
+  .projects {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1171px) {
+  .txtContainer {
+    top: 21%;
+    left: 20%;
   }
 }/*# sourceMappingURL=styles.css.map */
