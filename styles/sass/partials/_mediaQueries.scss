@@ -30,9 +30,14 @@
     margin: 85px 19px;
   }
   .card:hover .content {
-    margin-top: -6.5rem;
+    margin-top: -4.5rem;
   }
-  
+  .card:hover {
+    height: 30rem;
+  }
+  .card:nth-child(3):hover {
+    height: 32rem;
+  }
 }
 @media screen and (max-width: 500px) {
   .social ul {

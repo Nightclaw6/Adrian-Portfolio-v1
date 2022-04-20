@@ -194,7 +194,7 @@ header {
     font-family: $headingFont;
     font-size: 3.5rem;
     padding: 2rem 0;
-    @include easeOut;
+    // @include easeOut;
     &:hover {
       color: $primary;
     }

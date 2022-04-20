@@ -544,7 +544,6 @@ header {
   font-family: "Nunito Sans", sans-serif;
   font-size: 3.5rem;
   padding: 2rem 0;
-  transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
   color: #dd1c63;
@@ -983,7 +982,15 @@ form .active .placeholder {
   }
 
   .card:hover .content {
-    margin-top: -6.5rem;
+    margin-top: -4.5rem;
+  }
+
+  .card:hover {
+    height: 30rem;
+  }
+
+  .card:nth-child(3):hover {
+    height: 32rem;
   }
 }
 @media screen and (max-width: 500px) {
