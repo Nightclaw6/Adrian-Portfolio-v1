@@ -3,7 +3,7 @@ main {
   float: left;
   position: relative;
   clear: both;
-  margin-top: 8vh;
+  margin: 8vh 0 4vh 0;
 }
 // main .subtitle {
   
@@ -90,7 +90,7 @@ h1::after {
 
 // About Section
 .rightContainer {
-  background-image: url(../../../assets/contact/bg.jpg);
+  background-image: url(../../../assets/contact/bg1.jpg);
   width: 100%;
 }
 .rightContainer h3 {
@@ -98,6 +98,7 @@ h1::after {
   font-family: $headingFont;
   font-size: 3rem;
   text-decoration: underline 4px $primary;
+  margin-top: 50px;
 }
 .rightContainer p {
   padding: 20px;

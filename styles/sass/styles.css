@@ -461,6 +461,10 @@ header {
   transition: all 0.5s ease-out;
 }
 
+.hideBtn {
+  opacity: 0.2;
+}
+
 .btn-line {
   width: 28px;
   height: 3px;
@@ -570,7 +574,7 @@ main {
   float: left;
   position: relative;
   clear: both;
-  margin-top: 8vh;
+  margin: 8vh 0 4vh 0;
 }
 
 .heroImg {
@@ -669,7 +673,7 @@ h1::after {
   }
 }
 .rightContainer {
-  background-image: url(../../../assets/contact/bg.jpg);
+  background-image: url(../../../assets/contact/bg1.jpg);
   width: 100%;
 }
 
@@ -679,6 +683,7 @@ h1::after {
   font-size: 3rem;
   -webkit-text-decoration: underline 4px #dd1c63;
           text-decoration: underline 4px #dd1c63;
+  margin-top: 50px;
 }
 
 .rightContainer p {
@@ -761,7 +766,7 @@ footer p {
   height: 26rem;
 }
 
-.card:nth-child(3):hover {
+.card:nth-child(2):hover {
   height: 28rem;
 }
 

@@ -17,41 +17,12 @@
   justify-items: center;
   align-items: center;
 }
-// .project_item {
-//   position: relative;
-//   display: flex;
-//   flex-direction: column;
-// }
-// .project_item:hover,
-// .project_item:focus {
-//   transform: scale(1.1);
-//   transition: all 0.5s ease-in-out;
-// }
-// .project_item img {
-//   width: 23rem;
-//   height: 20rem;
-//   border: 5px solid white;
-//   background-size: cover;
-//   margin: 5px;
-// }
 
-// .project_item button {
-//   background-color: black;
-//   color: white;
-//   border: 1px solid white;
-//   border-radius: 20px;
-//   display: inline-block;
-// }
 .buttons {
   display: inline-block;
   text-align: center;
 }
-// .project_item button:hover,
-// .project_item button:focus {
-//   background-color: $primary;
-//   color: black;
-//   transition: background-color 1.2s ease-out;
-// }
+
 
 .card {
   position: relative;
@@ -70,7 +41,7 @@
   height: 26rem;
 }
 
-.card:nth-child(3):hover {
+.card:nth-child(2):hover {
   height: 28rem;
 }
 

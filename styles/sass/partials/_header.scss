@@ -103,6 +103,10 @@ header {
   @include easeOut;
 }
 
+.hideBtn {
+  opacity: 0.2;
+}
+
 .btn-line {
   width: 28px;
   height: 3px;
