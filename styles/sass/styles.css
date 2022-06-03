@@ -548,6 +548,7 @@ header {
   font-family: "Nunito Sans", sans-serif;
   font-size: 3.5rem;
   padding: 2rem 0;
+  text-decoration: none;
 }
 .menu .nav-link:hover {
   color: #dd1c63;
@@ -687,9 +688,11 @@ h1::after {
 }
 
 .rightContainer p {
-  padding: 20px;
+  padding: 0 20px;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.8rem;
+  margin: 0;
+  text-indent: 40px;
 }
 
 .skillIcons {
@@ -729,6 +732,7 @@ footer p {
 }
 
 .port_title h3 {
+  margin-top: 50px;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-size: 3rem;
@@ -848,6 +852,8 @@ footer p {
   background: #141414;
   margin: 10px;
   padding: 10px;
+  border-radius: 20px;
+  outline: none;
 }
 
 .personal_info h3,

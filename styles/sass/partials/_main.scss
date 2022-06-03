@@ -89,6 +89,7 @@ h1::after {
 // End of Typewriter Effect
 
 // About Section
+
 .rightContainer {
   background-image: url(../../../assets/contact/bg1.jpg);
   width: 100%;
@@ -101,9 +102,11 @@ h1::after {
   margin-top: 50px;
 }
 .rightContainer p {
-  padding: 20px;
+  padding: 0 20px;
   font-family: $headingFont;
   font-size: 1.8rem;
+  margin: 0;
+  text-indent: 40px;
 }
 
 .skillIcons {
