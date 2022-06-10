@@ -530,7 +530,7 @@ header {
 .menu .menu-branding img {
   border-radius: 50%;
   width: 25rem;
-  height: 21.55rem;
+  height: 25rem;
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -1073,8 +1073,8 @@ form .active .placeholder {
 @media screen and (max-width: 665px) {
   header .menu .menu-branding img {
     margin: 5px;
-    width: 17rem;
-    height: 14.65rem;
+    width: 18rem;
+    height: 18rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1091,8 +1091,8 @@ form .active .placeholder {
 
   .menu .menu-branding img {
     margin: 5px;
-    width: 20rem;
-    height: 17.25rem;
+    width: 18rem;
+    height: 18rem;
   }
 
   .menu .nav-item a {
