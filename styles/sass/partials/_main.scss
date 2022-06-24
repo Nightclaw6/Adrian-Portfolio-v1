@@ -115,10 +115,28 @@ h1::after {
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 5% 20%;
+  margin: 5% 22%;
 }
 .icons {
   margin: 20px;
+}
+.icon-style {
+  text-align: center;
+}
+.icon-style .img-style {
+  text-align: center;
+  background-color: white;
+}
+.icon-style .p-style {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  text-indent: 0;
+  color: lightskyblue;
+}
+.icon-style:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease-out;
 }
 .icons:hover {
   transform: scale(1.3);
@@ -129,7 +147,8 @@ h1::after {
 }
 
 #github {
-  background-color: grey;
+  background-color: white;
+  // color: white;
 }
 
 // Footer Section
