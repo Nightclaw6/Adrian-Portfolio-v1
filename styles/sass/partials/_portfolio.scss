@@ -45,8 +45,16 @@
   height: 26rem;
 }
 
+.card:nth-child(1):hover {
+  height: 31rem;
+}
+
 .card:nth-child(2):hover {
   height: 28rem;
+}
+
+.card:nth-child(3):hover {
+  height: 25rem;
 }
 
 .card .imgBx {
