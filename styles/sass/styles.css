@@ -640,7 +640,7 @@ h1 span {
 }
 
 .rightContainer p {
-  padding: 0 20px;
+  padding: 0 70px 20px 70px;
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.8rem;
   margin: 0;
@@ -858,7 +858,7 @@ xrotate-2
 #portfolio {
   background-image: url(../../../assets/portfolio/bg.jpg);
   margin-bottom: 50px;
-  width: 99%;
+  width: 100%;
 }
 
 .port_title {
@@ -974,7 +974,7 @@ xrotate-2
 /*	23) Section Contact
 /*------------------------------------------------------------------*/
 .contact {
-  width: 98%;
+  width: 99%;
   padding: 1rem;
   box-shadow: 0 0 20px 0 rgba(221, 28, 99, 0.7);
   margin: 10px;
