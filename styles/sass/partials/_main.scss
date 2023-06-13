@@ -99,13 +99,13 @@ h1 span {
   font-family: $headingFont;
   font-size: 3rem;
   text-decoration: underline 4px $primary;
-  margin-top: 50px;
+  margin-top: 9rem;
 }
 .rightContainer p {
-  padding: 0 70px 20px 70px;
+  // padding: 0 -1px 20px 35px;
   font-family: $headingFont;
   font-size: 1.8rem;
-  margin: 0;
+  margin: 15px 0 0 0;
   text-indent: 40px;
 }
 
@@ -119,15 +119,24 @@ h1 span {
 }
 .icons {
   margin: 20px;
-}
-.icon-style {
   text-align: center;
 }
-.icon-style .img-style {
+.icons :nth-child(9) {
+  text-align: center;
+  // width: 14rem;
+}
+.icons .img-style {
   text-align: center;
   background-color: white;
 }
-.icon-style .p-style {
+.icons p {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  text-indent: 0;
+  color: lightskyblue;
+}
+.icon-style .p {
   text-align: center;
   font-size: 0.8rem;
   margin-top: -10px;

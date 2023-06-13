@@ -7,7 +7,7 @@
   padding-top: 20px;
 }
 .port_title h3 {
-  margin-top: 50px;
+  margin-top: 2rem;
   text-align: center;
   font-family: $headingFont;
   font-size: 3rem;
@@ -42,7 +42,7 @@
 }
 
 .card:hover {
-  height: 26rem;
+  height: 27rem;
 }
 
 .card:nth-child(1):hover {
@@ -50,11 +50,19 @@
 }
 
 .card:nth-child(2):hover {
-  height: 28rem;
+  height: 25rem;
 }
 
 .card:nth-child(3):hover {
+  height: 28.5rem;
+}
+
+.card:nth-child(4):hover {
   height: 25rem;
+}
+
+.card:nth-child(5):hover {
+  height: 27rem;
 }
 
 .card .imgBx {
