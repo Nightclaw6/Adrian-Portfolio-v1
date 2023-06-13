@@ -849,11 +849,11 @@ xrotate-2
 }
 
 .card:nth-child(1):hover {
-  height: 31rem;
+  height: 34rem;
 }
 
 .card:nth-child(2):hover {
-  height: 25rem;
+  height: 31.5rem;
 }
 
 .card:nth-child(3):hover {
@@ -861,11 +861,11 @@ xrotate-2
 }
 
 .card:nth-child(4):hover {
-  height: 25rem;
+  height: 27rem;
 }
 
 .card:nth-child(5):hover {
-  height: 27rem;
+  height: 29rem;
 }
 
 .card .imgBx {
